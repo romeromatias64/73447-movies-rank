@@ -20,10 +20,48 @@
     </nav>
     
     <main class="container-xxl">
-        <div class="row">
+        <div class="row py-3">
 
             <div class="col-12 col-lg-4">
                 <h1 class="h2">Formulario Películas</h1>
+
+                <form class="p-3 border border-primary mb-3" id="moviesForm">
+
+                    <div class="mb-3">
+                        <label for="titulo">Titulo de la pelicula</label>
+                        <input type="text" name="title" id="titulo" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="imagen">Imagen</label>
+                        <input type="url" name="image" id="imagen" class="form-control" placeholder="URL de la imagen" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="genero">Genero</label>
+                        <select name="genre" id="genero" class="form-select">
+                            <option value="">Selecciona un género</option>
+                            <option value="accion">Acción</option>
+                            <option value="aventuras">Aventuras</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="drama">Drama</option>
+                            <option value="terror">Terror</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <div class="col-6">
+                            <label for="fechaEstreno">Fecha de estreno</label>
+                            <input type="date" name="date" id="fechaEstreno" class="form-control" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="valor">Valoración</label>
+                            <input type="range" name="score" id="valor" class="form-range" min="1" max="5" step=".5" required>
+                        </div>
+                    </div>
+
+                    <button  type="submit" class="btn-primary">Guardar</button>
+                </form>
             </div>
 
             <div class="col-12 col-lg-8">
@@ -69,8 +107,12 @@
 
                                 <div class="actions">
 
-                                    <button class="btn btn-primary">Editar</button>
-                                    <button class="btn btn-danger">Eliminar</button>
+                                    <button class="btn btn-primary">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <button class="btn btn-danger">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
                                     
                                 </div>
                             </td>
@@ -83,5 +125,6 @@
         </div>
     </main>
 
+    <script src="/js/movie-apps.js"></script>
 </body>
 </html>

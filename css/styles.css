@@ -1,6 +1,12 @@
 
 .table-movies {
 
+    tbody {
+        td {
+            vertical-align: middle;
+            
+        }
+    }
     
 }
 
@@ -8,5 +14,32 @@
 .image-cell {
     img {
         width: 75px;
+    }
+}
+
+.name-cell {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.score-cell {
+    text-align: center;
+}
+
+
+.actions-cell {
+    align-content: center;
+
+    .actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+
+        .btn {
+            padding: .25rem;
+            width: 30px;
+            text-align: center;
+        }
     }
 }
