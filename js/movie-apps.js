@@ -4,10 +4,22 @@ const movies = []
 const moviesForm = document.getElementById("moviesForm")
 
 // Necesito escuchar cuando el usuario envie el formulario
-// En base a lo ingresado por el usuario, crear un objeto de pelicula
+moviesForm.addEventListener("submit", function(evento) {
+    
+    evento.preventDefault()
+    
+    const el = evento.target.elements
 
-moviesForm.addEventListener("submit", function() {
-    console.log("El formulario fue enviado")
+    // En base a lo ingresado por el usuario, crear un objeto de pelicula
+    const pelicula = {
+        title: el.title.value,
+        genre: el.genre.value,
+        year: el.date.value,
+        score: el.score.value,
+        image: el.image.value
+    }
+
+    console.log(pelicula)
 })
 
 // Agregar la pelicula al array de peliculas
