@@ -6,7 +6,7 @@ const moviesForm = document.getElementById("moviesForm");
 
 // Necesito escuchar cuando el usuario envíe el formulario
 moviesForm.addEventListener("submit", function(evento) {
-    
+    // Evitar que el formulario se envíe
     evento.preventDefault();
     
     const el = evento.target.elements;
