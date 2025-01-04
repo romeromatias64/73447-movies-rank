@@ -52,7 +52,6 @@
                                 name="image"
                                 id="image"
                                 class="form-control"
-                                value="http://direccion.com/imagen.jpg"
                                 required
                                 placeholder="URL de la imagen"
                         >
@@ -68,11 +67,11 @@
                                 required
                         >
                             <option value="">Selecciona un género</option>
-                            <option value="accion">Acción</option>
-                            <option value="aventuras">Aventuras</option>
-                            <option value="comedia">Comedia</option>
-                            <option value="drama">Drama</option>
-                            <option value="terror">Terror</option>
+                            <option value="Acción">Acción</option>
+                            <option value="Aventuras">Aventuras</option>
+                            <option value="Comedia">Comedia</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Terror">Terror</option>
                         </select>
 
                     </div>
@@ -112,7 +111,15 @@
             </div>
 
             <div class="col-12 col-lg-8">
-                <h1 class="h2">Lista de Películas</h1>
+                <div class="d-flex justify-content-between mb-4">
+                    <h1 class="h2">Lista de Películas</h1>
+                    <div class="input-group w-50 border border-primary">
+                        <span class="input-group-text">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control" id="search" placeholder="Buscar pelicula">
+                    </div>
+                </div>
 
                 <table class="table table-striped table-movies">
                     <thead>
@@ -126,44 +133,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td class="image-cell">
-                                <img src="https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="">
-                            </td>
-                            <td class="name-cell">
-                                <div class="name">
-                                    El Señor de los Anillos
-                                </div>
-                            </td>
-                            <td class="genre-cell">
-                                <div class="genre">
-                                    Aventuras
-                                </div>
-                            </td>
-                            <td class="score-cell">
-                                <div class="score">
-                                    5
-                                </div>
-                            </td>
-                            <td class="date-cell">
-                                <div class="date">
-                                    01-11-2001
-                                </div>
-                            </td>
-                            <td class="actions-cell">
-
-                                <div class="actions">
-
-                                    <button class="btn btn-primary">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </button>
-                                    <button class="btn btn-danger">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                    
-                                </div>
-                            </td>
-                        </tr>
+                        
                     </tbody>
                 </table>
 
