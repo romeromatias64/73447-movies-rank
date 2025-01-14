@@ -102,6 +102,9 @@ function editarPelicula(id) {
 
     el.title.value = pelicula.title
     el.genre.value = pelicula.genre
+    el.image.value = pelicula.image
+    el.date.value = pelicula.date
+    el.score.value = pelicula.score
     // vamos a cambiar el texto del boton de submit
     // vamos a cambiar los estilos del formulario
     // vamos a cambiar el evento del formulario 
